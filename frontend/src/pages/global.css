@@ -1,0 +1,33 @@
+/* src/pages/global.css (merge with your existing file) */
+:root {
+  --bg: #fafafa;
+  --text: #111;
+  --muted: #666;
+  --accent: #0b78ff;
+  --card: #fff;
+  --glass: rgba(255,255,255,0.75);
+}
+
+html,body,#root { height:100%; margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:var(--text); }
+
+/* Background wallpaper — put image at public/backgrounds/hotel-bg.jpg */
+body {
+  background: url('/backgrounds/hotel-bg.jpg') center/cover no-repeat fixed;
+  background-color: var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* lightly blur & glass overlay for content readability */
+#root > div { background: linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(255,255,255,0.9)); min-height:100vh; }
+
+/* page headings */
+.pageTitle { font-size: 34px; margin:0 0 6px 0; font-weight:800; }
+.lead { color:var(--muted); margin:6px 0 16px 0; font-size:16px; }
+
+/* basic elements */
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+input, button, select, textarea { font-family:inherit; font-size:14px; padding:8px; border-radius:8px; border:1px solid #e6e6e6; }
+
+main { padding:28px; max-width:1200px; margin:0 auto; }

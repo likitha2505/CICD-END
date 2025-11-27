@@ -1,0 +1,24 @@
+/* src/components/layout/NavBar.module.css */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+  border-bottom:1px solid #ececec;
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:60;
+}
+.left { display:flex; align-items:center; gap:18px; }
+.brand { font-weight:700; font-size:20px; color:#111; text-decoration:none; }
+.brand span { color:#007bff; margin-left:6px; font-weight:800; }
+.links { display:flex; gap:12px; align-items:center; }
+.links a { color:#333; text-decoration:none; padding:6px 8px; border-radius:6px; }
+.links a:hover { background:#f5f8ff; color:#007bff; }
+
+.right { display:flex; gap:12px; align-items:center; }
+.linkBtn { color:#007bff; text-decoration:none; padding:6px 8px; }
+.actionBtn { background:#007bff; color:white; padding:6px 10px; border-radius:6px; text-decoration:none; }
+.user { color:#333; font-weight:600; margin-right:6px; }
+.logoutBtn { background:#e75d5d; color:#fff; border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
