@@ -16,7 +16,7 @@ services:
     image: likithareddy25/hotel-backend   # FIXED
     container_name: springboot
     ports:
-      - "2025:2000"
+      - "5055:2000"
     depends_on:
       - mysqldb
     restart: on-failure
@@ -27,7 +27,7 @@ services:
     image: likithareddy25/hotel-frontend  # FIXED
     container_name: react
     ports:
-      - "3000:80"
+      - "5056:80"
     depends_on:
       - backend
     restart: on-failure
